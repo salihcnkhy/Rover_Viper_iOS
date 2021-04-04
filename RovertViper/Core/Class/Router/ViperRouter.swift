@@ -6,7 +6,6 @@
 //
 
 open class ViperRouter: Router {
-   public required init() {
-        
-    }
+    // TODO: What can i do here??
+   public required init() { }
 }

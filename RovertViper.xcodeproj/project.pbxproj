@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5940AE34261A7A4200054621 /* DefaultStateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE33261A7A4200054621 /* DefaultStateHelper.swift */; };
+		5940AE39261A7A7E00054621 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE38261A7A7E00054621 /* ViewState.swift */; };
+		5940AE3E261A7A9C00054621 /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE3D261A7A9C00054621 /* View+AnyView.swift */; };
+		5940AE43261A7AEF00054621 /* StateHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */; };
+		5940AE46261A7B1100054621 /* DefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE45261A7B1100054621 /* DefaultLoadingView.swift */; };
 		59CD0E212604DDF200C7D006 /* RovertViper.h in Headers */ = {isa = PBXBuildFile; fileRef = 59CD0E132604DDF200C7D006 /* RovertViper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59CD0E502604DE9500C7D006 /* ViperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E4F2604DE9500C7D006 /* ViperView.swift */; };
 		59CD0E552604DEC100C7D006 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E542604DEC100C7D006 /* Presenter.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5940AE33261A7A4200054621 /* DefaultStateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStateHelper.swift; sourceTree = "<group>"; };
+		5940AE38261A7A7E00054621 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		5940AE3D261A7A9C00054621 /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
+		5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHandlerProtocol.swift; sourceTree = "<group>"; };
+		5940AE45261A7B1100054621 /* DefaultLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoadingView.swift; sourceTree = "<group>"; };
 		59CD0E102604DDF200C7D006 /* RovertViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RovertViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CD0E132604DDF200C7D006 /* RovertViper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RovertViper.h; sourceTree = "<group>"; };
 		59CD0E142604DDF200C7D006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +57,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5940AE31261A7A2B00054621 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE32261A7A3300054621 /* State */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5940AE32261A7A3300054621 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE33261A7A4200054621 /* DefaultStateHelper.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		5940AE36261A7A7000054621 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE37261A7A7500054621 /* State */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		5940AE37261A7A7500054621 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE38261A7A7E00054621 /* ViewState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		5940AE3C261A7A8E00054621 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE3D261A7A9C00054621 /* View+AnyView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5940AE40261A7ADD00054621 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE41261A7AE200054621 /* State */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5940AE41261A7AE200054621 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		59CD0E062604DDF200C7D006 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +247,9 @@
 		59CD0ECD2607F98A00C7D006 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				5940AE40261A7ADD00054621 /* Protocol */,
+				5940AE36261A7A7000054621 /* Enum */,
+				5940AE31261A7A2B00054621 /* Class */,
 				59CD0ECE2607F99600C7D006 /* View */,
 			);
 			path = Helper;
@@ -189,6 +258,7 @@
 		59CD0ECE2607F99600C7D006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5940AE3C261A7A8E00054621 /* Extension */,
 				59CD0ED3260802F800C7D006 /* State */,
 				59CD0ED02607FE6900C7D006 /* ViperBuilder.swift */,
 			);
@@ -198,6 +268,7 @@
 		59CD0ED3260802F800C7D006 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				5940AE45261A7B1100054621 /* DefaultLoadingView.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -283,11 +354,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				59CD0ED12607FE6900C7D006 /* ViperBuilder.swift in Sources */,
+				5940AE46261A7B1100054621 /* DefaultLoadingView.swift in Sources */,
 				59CD0EA92605004D00C7D006 /* Router.swift in Sources */,
+				5940AE39261A7A7E00054621 /* ViewState.swift in Sources */,
 				59CD0E9A2604EE7800C7D006 /* Model.swift in Sources */,
+				5940AE34261A7A4200054621 /* DefaultStateHelper.swift in Sources */,
 				59CD0E8E2604E32D00C7D006 /* Interactor.swift in Sources */,
+				5940AE43261A7AEF00054621 /* StateHandlerProtocol.swift in Sources */,
 				59CD0E932604E7FC00C7D006 /* ViperPresenter.swift in Sources */,
 				59CD0EA32604F42100C7D006 /* ViperRouter.swift in Sources */,
+				5940AE3E261A7A9C00054621 /* View+AnyView.swift in Sources */,
 				59CD0EC82607C7A400C7D006 /* ViperModel.swift in Sources */,
 				59CD0E552604DEC100C7D006 /* Presenter.swift in Sources */,
 				59CD0E502604DE9500C7D006 /* ViperView.swift in Sources */,

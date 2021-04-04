@@ -8,6 +8,7 @@
 import Combine
 
 open class ViperInteractor<TModel: ViperModel>: Interactor {
+    // TODO: What can handle more?
     public var model: TModel
     
     public required init(model: TModel) {

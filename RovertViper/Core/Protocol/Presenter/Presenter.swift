@@ -11,6 +11,7 @@ public protocol Presenter: ObservableObject {
     associatedtype TInteractor: Interactor
     associatedtype TRouter: Router
     
+    // TODO: all values are public!! 
     var interactor: TInteractor { get set }
     var router: TRouter { get set }
     var currentViewState: ViewState { get set }

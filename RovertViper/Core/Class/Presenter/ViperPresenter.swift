@@ -9,7 +9,7 @@ import Combine
 import SwiftUI
 
 open class ViperPresenter<InteractorType: Interactor, RouterType: Router>: Presenter {
-
+    // TODO: More handler for view??
     public var cancellables: Set<AnyCancellable> = .init()
     public var interactor: InteractorType = .init()
     public var router: RouterType = .init()
@@ -44,50 +44,6 @@ open class ViperPresenter<InteractorType: Interactor, RouterType: Router>: Prese
     }
 }
 
-public protocol StateHandlerProtocol {
-    var stateView: AnyView { get set }
-    var state: ViewState { get set }
-    init(state: ViewState)
-}
 
-public struct DefaultViewStateHandler: StateHandlerProtocol {
-    
-    public var state: ViewState {
-        willSet {
-            var newStateView = EmptyView().eraseViewToAnyView()
-            switch newValue {
-            case .onLoading:
-                newStateView = RoundedRectangle(cornerRadius: 12).fill(Color.blue)
-                    .frame(width: 100, height: 100)
-                    .eraseViewToAnyView()
-            default:
-                newStateView = EmptyView().eraseViewToAnyView()
-            }
-            self.stateView = newStateView
-        }
-    }
-    
-    public var stateView: AnyView = EmptyView().eraseViewToAnyView()
 
-    public init(state: ViewState = .empty) {
-        self.state = state
-    }
-}
 
-public enum ViewState {
-    case empty
-    case willAppear
-    case didAppear
-    case onLoading
-    case afterLoading
-    case willThrowError
-    case onThrowError
-    case willDisappear
-    case didDisappear
-}
-
-public extension View {
-    func eraseViewToAnyView() -> AnyView {
-        AnyView(self)
-    }
-}
