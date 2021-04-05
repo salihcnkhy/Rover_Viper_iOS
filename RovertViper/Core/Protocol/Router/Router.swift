@@ -6,5 +6,6 @@
 //
 
 public protocol Router {
+    var isRoot: Bool { get set }
     init()
 }

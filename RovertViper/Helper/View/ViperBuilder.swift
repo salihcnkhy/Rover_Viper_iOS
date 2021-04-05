@@ -18,7 +18,12 @@ public struct ViperBuilder<Content: View, PresenterT: Presenter>: View {
     
     public var body: some View {
         ZStack {
-            content
+            VStack {
+                // TODO: store navigation type, screen title, subtitle, isRoot etc. and create a protocol for navigationbar view
+                NavigationBar(title: "Collection", subtitle: "All collections", isRoot: presenter.router.isRoot)
+                // TODO: Stretch content to available height
+                content
+            }
             presenter.stateHandler.stateView
         }
     }

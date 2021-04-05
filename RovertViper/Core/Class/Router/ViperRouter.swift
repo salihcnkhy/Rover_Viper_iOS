@@ -6,6 +6,10 @@
 //
 
 open class ViperRouter: Router {
+    public var isRoot: Bool
+    
     // TODO: What can i do here??
-   public required init() { }
+   public required init() {
+    isRoot = true
+   }
 }

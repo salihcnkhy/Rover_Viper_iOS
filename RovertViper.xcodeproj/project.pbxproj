@@ -12,6 +12,8 @@
 		5940AE3E261A7A9C00054621 /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE3D261A7A9C00054621 /* View+AnyView.swift */; };
 		5940AE43261A7AEF00054621 /* StateHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */; };
 		5940AE46261A7B1100054621 /* DefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE45261A7B1100054621 /* DefaultLoadingView.swift */; };
+		5940AE78261A936400054621 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE77261A936400054621 /* NavigationBar.swift */; };
+		5940AE7D261A93B900054621 /* DefaultViewSizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE7C261A93B900054621 /* DefaultViewSizeConstants.swift */; };
 		59CD0E212604DDF200C7D006 /* RovertViper.h in Headers */ = {isa = PBXBuildFile; fileRef = 59CD0E132604DDF200C7D006 /* RovertViper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59CD0E502604DE9500C7D006 /* ViperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E4F2604DE9500C7D006 /* ViperView.swift */; };
 		59CD0E552604DEC100C7D006 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E542604DEC100C7D006 /* Presenter.swift */; };
@@ -31,6 +33,8 @@
 		5940AE3D261A7A9C00054621 /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
 		5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHandlerProtocol.swift; sourceTree = "<group>"; };
 		5940AE45261A7B1100054621 /* DefaultLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoadingView.swift; sourceTree = "<group>"; };
+		5940AE77261A936400054621 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		5940AE7C261A93B900054621 /* DefaultViewSizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewSizeConstants.swift; sourceTree = "<group>"; };
 		59CD0E102604DDF200C7D006 /* RovertViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RovertViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CD0E132604DDF200C7D006 /* RovertViper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RovertViper.h; sourceTree = "<group>"; };
 		59CD0E142604DDF200C7D006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +115,22 @@
 				5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		5940AE76261A933300054621 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE77261A936400054621 /* NavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		5940AE7B261A938900054621 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE7C261A93B900054621 /* DefaultViewSizeConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		59CD0E062604DDF200C7D006 = {
@@ -258,6 +278,8 @@
 		59CD0ECE2607F99600C7D006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5940AE7B261A938900054621 /* Constants */,
+				5940AE76261A933300054621 /* NavigationBar */,
 				5940AE3C261A7A8E00054621 /* Extension */,
 				59CD0ED3260802F800C7D006 /* State */,
 				59CD0ED02607FE6900C7D006 /* ViperBuilder.swift */,
@@ -356,6 +378,7 @@
 				59CD0ED12607FE6900C7D006 /* ViperBuilder.swift in Sources */,
 				5940AE46261A7B1100054621 /* DefaultLoadingView.swift in Sources */,
 				59CD0EA92605004D00C7D006 /* Router.swift in Sources */,
+				5940AE78261A936400054621 /* NavigationBar.swift in Sources */,
 				5940AE39261A7A7E00054621 /* ViewState.swift in Sources */,
 				59CD0E9A2604EE7800C7D006 /* Model.swift in Sources */,
 				5940AE34261A7A4200054621 /* DefaultStateHelper.swift in Sources */,
@@ -368,6 +391,7 @@
 				59CD0E552604DEC100C7D006 /* Presenter.swift in Sources */,
 				59CD0E502604DE9500C7D006 /* ViperView.swift in Sources */,
 				59CD0E9E2604EEBF00C7D006 /* ViperInteractor.swift in Sources */,
+				5940AE7D261A93B900054621 /* DefaultViewSizeConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
