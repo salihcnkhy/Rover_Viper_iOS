@@ -20,7 +20,7 @@ public struct ViperPageBuilder<Content: ViperView>: PageBuilder {
     public var body: some View {
         ZStack {
             VStack {
-                AppStore.shared.themeStore.navigationBarType.init(model: content.navigationModel)
+                AppStore.shared.themeStore.navigationBarType.init(model: content.navigationBarModel)
                     .alignmentGuide(.top, computeValue: { $0[.top.self] })
                 content
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
