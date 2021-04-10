@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ViperBuilder<Content: View, PresenterT: Presenter>: View {
+public struct ViperPageBuilder<Content: View, PresenterT: Presenter>: View {
     let content: Content
     var presenter: PresenterT
     

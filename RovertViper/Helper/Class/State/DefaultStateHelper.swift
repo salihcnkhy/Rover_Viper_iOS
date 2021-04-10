@@ -15,6 +15,7 @@ public struct DefaultViewStateHandler: StateHandlerProtocol {
             var newStateView = AnyView.empty
             switch newValue {
             case .onLoading:
+                // TODO: Put views to ThemeStore
                 newStateView = DefaultLodingView().eraseViewToAnyView()
             default:
                 newStateView = AnyView.empty

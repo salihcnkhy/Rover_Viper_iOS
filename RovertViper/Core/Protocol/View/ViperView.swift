@@ -12,4 +12,5 @@ public protocol ViperView: View {
     // TODO: here have strong prob of presenter but, what if i bind presenter some probs here to block interaction with presenter fields
     associatedtype TPresenter: Presenter
     var presenter: StateObject<TPresenter> { get set}
+    var navigationModel: NavigationBarModel { get }
 }
