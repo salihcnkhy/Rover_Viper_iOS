@@ -1,5 +1,5 @@
 //
-//  ViperBuilder.swift
+//  PageBuilder.swift
 //  RovertViper
 //
 //  Created by Salihcan Kahya on 22.03.2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ViperPageBuilder<Content: ViperView>: PageBuilder {
+public struct PageBuilder<Content: ViewProtocol>: PageBuilderProtocol {
     let content: Content
     let stateHandler: StateHandlerProtocol
 
@@ -33,9 +33,3 @@ public struct ViperPageBuilder<Content: ViperView>: PageBuilder {
         }
     }
 }
-
-public protocol PageBuilder: View {
-    associatedtype Content: ViperView
-    init(content: Content)
-}
-

@@ -1,12 +1,12 @@
 //
-//  DataModel.swift
+//  ModelProtocol.swift
 //  RovertViper
 //
 //  Created by Salihcan Kahya on 19.03.2021.
 //
 import Combine
 
-public protocol Model {
+public protocol ModelProtocol {
     var viewState: ViewState { get set }
 
     init(state: ViewState)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ViperAppBuilder<Content: PageBuilder>: Scene {
+public struct AppBuilder<Content: PageBuilderProtocol>: Scene {
 
     let content: Content
     

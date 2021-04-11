@@ -8,9 +8,9 @@
 import SwiftUI
 import Combine
 
-public protocol ViperView: View {
+public protocol ViewProtocol: View {
     // TODO: here have strong prob of presenter but, what if i bind presenter some probs here to block interaction with presenter fields
-    associatedtype TPresenter: Presenter
+    associatedtype TPresenter: PresenterProtocol
     var presenter: StateObject<TPresenter> { get set}
     var navigationBarModel: NavigationBarModel { get }
 }

@@ -7,9 +7,9 @@
 import Combine
 import SwiftUI
 
-public protocol Presenter: ObservableObject {
-    associatedtype TInteractor: Interactor
-    associatedtype TRouter: Router
+public protocol PresenterProtocol: ObservableObject {
+    associatedtype TInteractor: InteractorProtocol
+    associatedtype TRouter: RouterProtocol
     
     // TODO: all values are public!! 
     var interactor: TInteractor { get set }

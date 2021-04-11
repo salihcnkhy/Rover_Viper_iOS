@@ -1,5 +1,5 @@
 //
-//  ViperPresenter.swift
+//  Presenter.swift
 //  RovertViper
 //
 //  Created by Salihcan Kahya on 19.03.2021.
@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-open class ViperPresenter<InteractorType: Interactor, RouterType: Router>: Presenter {
+open class Presenter<InteractorType: InteractorProtocol, RouterType: RouterProtocol>: PresenterProtocol {
     // TODO: More handler for view??
     public var cancellables: Set<AnyCancellable> = .init()
     public var interactor: InteractorType = .init()
