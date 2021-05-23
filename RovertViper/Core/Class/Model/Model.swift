@@ -7,7 +7,7 @@
 
 import Combine
 
-open class ViperModel: Model, ObservableObject {
+open class Model: ModelProtocol, ObservableObject {
     
     public var cancellables = Set<AnyCancellable>()
     

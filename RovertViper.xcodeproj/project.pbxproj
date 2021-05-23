@@ -7,33 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593D500226223D5B00180861 /* NavigationBarViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D500126223D5B00180861 /* NavigationBarViewProtocol.swift */; };
+		593D500526223F7E00180861 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D500426223F7E00180861 /* AppBuilder.swift */; };
+		593D50092622437300180861 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D50082622437300180861 /* AppStore.swift */; };
+		593D50112622624900180861 /* NavigationBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D50102622624900180861 /* NavigationBarModel.swift */; };
+		593D50142622716200180861 /* ThemeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D50132622716200180861 /* ThemeStore.swift */; };
+		593D501D262271A300180861 /* DefaultThemeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D501C262271A300180861 /* DefaultThemeStore.swift */; };
+		593D5026262329F800180861 /* PageBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D5025262329F800180861 /* PageBuilderProtocol.swift */; };
+		5940AE34261A7A4200054621 /* DefaultStateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE33261A7A4200054621 /* DefaultStateHelper.swift */; };
+		5940AE39261A7A7E00054621 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE38261A7A7E00054621 /* ViewState.swift */; };
+		5940AE3E261A7A9C00054621 /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE3D261A7A9C00054621 /* View+AnyView.swift */; };
+		5940AE43261A7AEF00054621 /* StateHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */; };
+		5940AE46261A7B1100054621 /* DefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE45261A7B1100054621 /* DefaultLoadingView.swift */; };
+		5940AE78261A936400054621 /* DefaultNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE77261A936400054621 /* DefaultNavigationBarView.swift */; };
+		5940AE7D261A93B900054621 /* DefaultViewSizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940AE7C261A93B900054621 /* DefaultViewSizeConstants.swift */; };
 		59CD0E212604DDF200C7D006 /* RovertViper.h in Headers */ = {isa = PBXBuildFile; fileRef = 59CD0E132604DDF200C7D006 /* RovertViper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59CD0E502604DE9500C7D006 /* ViperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E4F2604DE9500C7D006 /* ViperView.swift */; };
-		59CD0E552604DEC100C7D006 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E542604DEC100C7D006 /* Presenter.swift */; };
-		59CD0E8E2604E32D00C7D006 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E8D2604E32D00C7D006 /* Interactor.swift */; };
-		59CD0E932604E7FC00C7D006 /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E922604E7FC00C7D006 /* ViperPresenter.swift */; };
-		59CD0E9A2604EE7800C7D006 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E992604EE7800C7D006 /* Model.swift */; };
-		59CD0E9E2604EEBF00C7D006 /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E9D2604EEBF00C7D006 /* ViperInteractor.swift */; };
-		59CD0EA32604F42100C7D006 /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0EA22604F42100C7D006 /* ViperRouter.swift */; };
-		59CD0EA92605004D00C7D006 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0EA82605004D00C7D006 /* Router.swift */; };
-		59CD0EC82607C7A400C7D006 /* ViperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0EC72607C7A400C7D006 /* ViperModel.swift */; };
-		59CD0ED12607FE6900C7D006 /* ViperBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0ED02607FE6900C7D006 /* ViperBuilder.swift */; };
+		59CD0E502604DE9500C7D006 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E4F2604DE9500C7D006 /* ViewProtocol.swift */; };
+		59CD0E552604DEC100C7D006 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E542604DEC100C7D006 /* PresenterProtocol.swift */; };
+		59CD0E8E2604E32D00C7D006 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E8D2604E32D00C7D006 /* InteractorProtocol.swift */; };
+		59CD0E932604E7FC00C7D006 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E922604E7FC00C7D006 /* Presenter.swift */; };
+		59CD0E9A2604EE7800C7D006 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E992604EE7800C7D006 /* ModelProtocol.swift */; };
+		59CD0E9E2604EEBF00C7D006 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0E9D2604EEBF00C7D006 /* Interactor.swift */; };
+		59CD0EA32604F42100C7D006 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0EA22604F42100C7D006 /* Router.swift */; };
+		59CD0EA92605004D00C7D006 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0EA82605004D00C7D006 /* RouterProtocol.swift */; };
+		59CD0EC82607C7A400C7D006 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0EC72607C7A400C7D006 /* Model.swift */; };
+		59CD0ED12607FE6900C7D006 /* PageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD0ED02607FE6900C7D006 /* PageBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		593D500126223D5B00180861 /* NavigationBarViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarViewProtocol.swift; sourceTree = "<group>"; };
+		593D500426223F7E00180861 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
+		593D50082622437300180861 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		593D50102622624900180861 /* NavigationBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModel.swift; sourceTree = "<group>"; };
+		593D50132622716200180861 /* ThemeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStore.swift; sourceTree = "<group>"; };
+		593D501C262271A300180861 /* DefaultThemeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultThemeStore.swift; sourceTree = "<group>"; };
+		593D5025262329F800180861 /* PageBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBuilderProtocol.swift; sourceTree = "<group>"; };
+		5940AE33261A7A4200054621 /* DefaultStateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStateHelper.swift; sourceTree = "<group>"; };
+		5940AE38261A7A7E00054621 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		5940AE3D261A7A9C00054621 /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
+		5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHandlerProtocol.swift; sourceTree = "<group>"; };
+		5940AE45261A7B1100054621 /* DefaultLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoadingView.swift; sourceTree = "<group>"; };
+		5940AE77261A936400054621 /* DefaultNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBarView.swift; sourceTree = "<group>"; };
+		5940AE7C261A93B900054621 /* DefaultViewSizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewSizeConstants.swift; sourceTree = "<group>"; };
 		59CD0E102604DDF200C7D006 /* RovertViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RovertViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CD0E132604DDF200C7D006 /* RovertViper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RovertViper.h; sourceTree = "<group>"; };
 		59CD0E142604DDF200C7D006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59CD0E4F2604DE9500C7D006 /* ViperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperView.swift; sourceTree = "<group>"; };
-		59CD0E542604DEC100C7D006 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		59CD0E8D2604E32D00C7D006 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		59CD0E922604E7FC00C7D006 /* ViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
-		59CD0E992604EE7800C7D006 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		59CD0E9D2604EEBF00C7D006 /* ViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
-		59CD0EA22604F42100C7D006 /* ViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
-		59CD0EA82605004D00C7D006 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		59CD0EC72607C7A400C7D006 /* ViperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModel.swift; sourceTree = "<group>"; };
-		59CD0ED02607FE6900C7D006 /* ViperBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperBuilder.swift; sourceTree = "<group>"; };
+		59CD0E4F2604DE9500C7D006 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		59CD0E542604DEC100C7D006 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		59CD0E8D2604E32D00C7D006 /* InteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
+		59CD0E922604E7FC00C7D006 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		59CD0E992604EE7800C7D006 /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
+		59CD0E9D2604EEBF00C7D006 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		59CD0EA22604F42100C7D006 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		59CD0EA82605004D00C7D006 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		59CD0EC72607C7A400C7D006 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		59CD0ED02607FE6900C7D006 /* PageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +75,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		593D50072622433700180861 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				593D50082622437300180861 /* AppStore.swift */,
+				593D501C262271A300180861 /* DefaultThemeStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		593D50162622717100180861 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				593D50132622716200180861 /* ThemeStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		593D5024262329EC00180861 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				593D5025262329F800180861 /* PageBuilderProtocol.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		5940AE31261A7A2B00054621 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				593D50072622433700180861 /* Store */,
+				5940AE32261A7A3300054621 /* State */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5940AE32261A7A3300054621 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE33261A7A4200054621 /* DefaultStateHelper.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		5940AE36261A7A7000054621 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE37261A7A7500054621 /* State */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		5940AE37261A7A7500054621 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE38261A7A7E00054621 /* ViewState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		5940AE3C261A7A8E00054621 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE3D261A7A9C00054621 /* View+AnyView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5940AE40261A7ADD00054621 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				593D5024262329EC00180861 /* Builder */,
+				593D50162622717100180861 /* Store */,
+				5940AE41261A7AE200054621 /* State */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5940AE41261A7AE200054621 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE42261A7AEF00054621 /* StateHandlerProtocol.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		5940AE76261A933300054621 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE77261A936400054621 /* DefaultNavigationBarView.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		5940AE7B261A938900054621 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5940AE7C261A93B900054621 /* DefaultViewSizeConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		59CD0E062604DDF200C7D006 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +226,8 @@
 		59CD0E4E2604DE8100C7D006 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0E4F2604DE9500C7D006 /* ViperView.swift */,
+				59CD0E4F2604DE9500C7D006 /* ViewProtocol.swift */,
+				593D500126223D5B00180861 /* NavigationBarViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,7 +235,7 @@
 		59CD0E532604DEB500C7D006 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0E542604DEC100C7D006 /* Presenter.swift */,
+				59CD0E542604DEC100C7D006 /* PresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -125,7 +254,7 @@
 		59CD0E8C2604E31F00C7D006 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0E8D2604E32D00C7D006 /* Interactor.swift */,
+				59CD0E8D2604E32D00C7D006 /* InteractorProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -133,7 +262,7 @@
 		59CD0E912604E7EC00C7D006 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0E922604E7FC00C7D006 /* ViperPresenter.swift */,
+				59CD0E922604E7FC00C7D006 /* Presenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -141,7 +270,7 @@
 		59CD0E972604E9A000C7D006 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0E992604EE7800C7D006 /* Model.swift */,
+				59CD0E992604EE7800C7D006 /* ModelProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,7 +278,7 @@
 		59CD0E9C2604EEB100C7D006 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0E9D2604EEBF00C7D006 /* ViperInteractor.swift */,
+				59CD0E9D2604EEBF00C7D006 /* Interactor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -157,7 +286,7 @@
 		59CD0EA12604F3AC00C7D006 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0EA22604F42100C7D006 /* ViperRouter.swift */,
+				59CD0EA22604F42100C7D006 /* Router.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -165,7 +294,7 @@
 		59CD0EA62605003600C7D006 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0EA82605004D00C7D006 /* Router.swift */,
+				59CD0EA82605004D00C7D006 /* RouterProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -173,7 +302,8 @@
 		59CD0EC62607C79300C7D006 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				59CD0EC72607C7A400C7D006 /* ViperModel.swift */,
+				593D50102622624900180861 /* NavigationBarModel.swift */,
+				59CD0EC72607C7A400C7D006 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +311,9 @@
 		59CD0ECD2607F98A00C7D006 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				5940AE40261A7ADD00054621 /* Protocol */,
+				5940AE36261A7A7000054621 /* Enum */,
+				5940AE31261A7A2B00054621 /* Class */,
 				59CD0ECE2607F99600C7D006 /* View */,
 			);
 			path = Helper;
@@ -189,8 +322,12 @@
 		59CD0ECE2607F99600C7D006 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5940AE7B261A938900054621 /* Constants */,
+				5940AE76261A933300054621 /* NavigationBar */,
+				5940AE3C261A7A8E00054621 /* Extension */,
 				59CD0ED3260802F800C7D006 /* State */,
-				59CD0ED02607FE6900C7D006 /* ViperBuilder.swift */,
+				59CD0ED02607FE6900C7D006 /* PageBuilder.swift */,
+				593D500426223F7E00180861 /* AppBuilder.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +335,7 @@
 		59CD0ED3260802F800C7D006 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				5940AE45261A7B1100054621 /* DefaultLoadingView.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -282,16 +420,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59CD0ED12607FE6900C7D006 /* ViperBuilder.swift in Sources */,
-				59CD0EA92605004D00C7D006 /* Router.swift in Sources */,
-				59CD0E9A2604EE7800C7D006 /* Model.swift in Sources */,
-				59CD0E8E2604E32D00C7D006 /* Interactor.swift in Sources */,
-				59CD0E932604E7FC00C7D006 /* ViperPresenter.swift in Sources */,
-				59CD0EA32604F42100C7D006 /* ViperRouter.swift in Sources */,
-				59CD0EC82607C7A400C7D006 /* ViperModel.swift in Sources */,
-				59CD0E552604DEC100C7D006 /* Presenter.swift in Sources */,
-				59CD0E502604DE9500C7D006 /* ViperView.swift in Sources */,
-				59CD0E9E2604EEBF00C7D006 /* ViperInteractor.swift in Sources */,
+				59CD0ED12607FE6900C7D006 /* PageBuilder.swift in Sources */,
+				593D50112622624900180861 /* NavigationBarModel.swift in Sources */,
+				5940AE46261A7B1100054621 /* DefaultLoadingView.swift in Sources */,
+				593D50142622716200180861 /* ThemeStore.swift in Sources */,
+				59CD0EA92605004D00C7D006 /* RouterProtocol.swift in Sources */,
+				5940AE78261A936400054621 /* DefaultNavigationBarView.swift in Sources */,
+				5940AE39261A7A7E00054621 /* ViewState.swift in Sources */,
+				593D500526223F7E00180861 /* AppBuilder.swift in Sources */,
+				593D5026262329F800180861 /* PageBuilderProtocol.swift in Sources */,
+				59CD0E9A2604EE7800C7D006 /* ModelProtocol.swift in Sources */,
+				5940AE34261A7A4200054621 /* DefaultStateHelper.swift in Sources */,
+				59CD0E8E2604E32D00C7D006 /* InteractorProtocol.swift in Sources */,
+				593D500226223D5B00180861 /* NavigationBarViewProtocol.swift in Sources */,
+				5940AE43261A7AEF00054621 /* StateHandlerProtocol.swift in Sources */,
+				593D50092622437300180861 /* AppStore.swift in Sources */,
+				59CD0E932604E7FC00C7D006 /* Presenter.swift in Sources */,
+				59CD0EA32604F42100C7D006 /* Router.swift in Sources */,
+				5940AE3E261A7A9C00054621 /* View+AnyView.swift in Sources */,
+				59CD0EC82607C7A400C7D006 /* Model.swift in Sources */,
+				59CD0E552604DEC100C7D006 /* PresenterProtocol.swift in Sources */,
+				593D501D262271A300180861 /* DefaultThemeStore.swift in Sources */,
+				59CD0E502604DE9500C7D006 /* ViewProtocol.swift in Sources */,
+				59CD0E9E2604EEBF00C7D006 /* Interactor.swift in Sources */,
+				5940AE7D261A93B900054621 /* DefaultViewSizeConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
